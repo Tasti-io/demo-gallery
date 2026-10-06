@@ -13,7 +13,10 @@ const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&
 
 const card = (d) => `
       <a class="card" href="${esc(d.url)}" target="_blank" rel="noopener">
-        <div class="shot"><img src="${esc(d.shot)}" alt="" loading="lazy" width="1200" height="675"></div>
+        <div class="frame">
+          <div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="addr">${esc(d.host)}</span></div>
+          <div class="shot"><img src="${esc(d.shot)}" alt="" loading="lazy" width="1600" height="1000"></div>
+        </div>
         <div class="body">
           <div class="head">
             <h2>${esc(d.title)}</h2>
@@ -23,7 +26,7 @@ const card = (d) => `
           <dl class="facts">
             <dt>Replaces</dt><dd>${esc(d.replaces)}</dd>
             <dt>Time</dt><dd>${esc(d.time)}</dd>
-            <dt>What that is worth</dt><dd>${esc(d.money)}</dd>
+            <dt>The point</dt><dd>${esc(d.point)}</dd>
           </dl>
           <span class="go">Open the demo &rarr;</span>
         </div>
@@ -55,9 +58,23 @@ const html = `<!DOCTYPE html>
   .card{display:block;background:var(--paper);border:1px solid var(--rule);border-radius:12px;overflow:hidden;
         text-decoration:none;color:inherit;transition:transform .14s ease,box-shadow .14s ease,border-color .14s ease}
   .card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(27,26,24,.10);border-color:#D4CFC4}
+  .card:hover .head h2{color:var(--teal)}
+  .card:hover .go{text-decoration:underline;text-underline-offset:3px}
+  .head h2{transition:color .14s ease}
   .card:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
-  .shot{aspect-ratio:16/9;overflow:hidden;background:var(--canvas);border-bottom:1px solid var(--rule)}
-  .shot img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+  /* A browser frame around a real screenshot. The alternative was generated
+     artwork, which would have been prettier and would have quietly undercut the
+     one claim the page makes, which is that these things actually run. */
+  .frame{background:#EDEAE3;border-bottom:1px solid var(--rule);padding:0 0 0}
+  .chrome{display:flex;align-items:center;gap:6px;padding:9px 12px;background:#E4E0D8}
+  .chrome .dot{width:9px;height:9px;border-radius:50%;background:#CFC9BE;flex:none}
+  .chrome .addr{flex:1;margin-left:6px;background:#F6F4EF;border-radius:5px;padding:3px 9px;
+                font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--faint);
+                white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .shot{aspect-ratio:16/10;overflow:hidden;background:var(--paper)}
+  .shot img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;
+            transition:transform .5s cubic-bezier(.2,.7,.3,1)}
+  .card:hover .shot img{transform:scale(1.025)}
   .body{padding:17px 19px 19px}
   .head{display:flex;align-items:baseline;gap:9px;margin-bottom:7px}
   .head h2{font-family:'DM Serif Display',Georgia,serif;font-size:21px;font-weight:400}
