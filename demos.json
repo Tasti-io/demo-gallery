@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "morning-sheet",
+    "title": "The morning sheet",
+    "url": "https://morning-sheet.tasti.io",
+    "shot": "/shots/morning-sheet.jpg",
+    "blurb": "Every location on one page before opening, built from the point of sale and from the supplier invoices it cannot see.",
+    "replaces": "Opening three portals and rebuilding yesterday by hand",
+    "time": "about 30 minutes a day",
+    "money": "a 2% price drift nobody caught on $70k of monthly purchasing is roughly $1,400 a month",
+    "live": true
+  },
+  {
+    "slug": "avo",
+    "title": "Avo",
+    "url": "https://avo.tasti.io",
+    "shot": "/shots/avo.jpg",
+    "blurb": "You say it once. It reaches the website, Instagram and Google in three different registers, and the agent checks the page before it tells you it is done.",
+    "replaces": "Writing one announcement four times, then not being sure the fourth went out",
+    "time": "about 20 minutes per announcement",
+    "money": "one closure that never reached the website is a day of customers at a locked door",
+    "live": true
+  }
+]
