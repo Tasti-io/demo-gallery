@@ -46,5 +46,17 @@
     "time": "about 2 hours a month for a two-site group, if anyone does it",
     "point": "At $40,000 a month through the apps, a one percent gap between statement and bank is $400 a month",
     "live": true
+  },
+  {
+    "slug": "prices",
+    "title": "Price sync",
+    "url": "https://prices.tasti.io",
+    "host": "prices.tasti.io",
+    "shot": "/shots/prices.jpg",
+    "blurb": "One price change across the till, the website and three delivery apps. Every channel checked against your own markup rule, what each sale really leaves, an approval step, and a second look after the send that catches the app which said yes and changed nothing.",
+    "replaces": "The same price edit in five admin screens, and hoping all five took",
+    "time": "about 2 hours per price round, plus the drift nobody sees",
+    "point": "Three weeks of app prices lagging a 4% increase, on $40,000 a month through the apps, is about $1,200",
+    "live": true
   }
 ]
