@@ -94,8 +94,7 @@ const html = `<!DOCTYPE html>
   .facts dd{color:var(--ink)}
   .go{display:inline-block;margin-top:14px;font-size:13.5px;font-weight:500;color:var(--teal)}
 
-  /* The one thing on the page that is not a sandbox: the same loop as the Avo demo,
-     running for a paying client. Muted autoplay so it moves on arrival; controls so
+  /* A short walkthrough of the Avo loop above the demos. Muted autoplay so it moves on arrival; controls so
      the sound is one click away. */
   .prod{margin-top:30px;background:var(--paper);border:1px solid var(--rule);border-radius:12px;overflow:hidden}
   .prod video{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;background:#06080b}
@@ -129,14 +128,12 @@ const html = `<!DOCTYPE html>
   <section class="prod">
     <video src="/media/avo-timothys.mp4" poster="/media/avo-timothys-poster.jpg" autoplay muted loop playsinline controls preload="metadata" width="1920" height="1080"></video>
     <div class="body">
-      <div class="tag">In production &middot; Timothy's Frozen Yogurt, Steveston</div>
-      <h2>Avo, running for a real client</h2>
+      <div class="tag">Walkthrough &middot; Avo</div>
+      <h2>One sentence to a live banner</h2>
       <p>
-        The owner types one sentence. Avo drafts the announcement, the owner approves it on one screen, and the
-        banner goes live on their public page. Then Avo opens that page again, finds its own words on it, and only
-        then says it is done. Google and Meta show as queued because those channels were not switched on yet.
+        One sentence in, a draft to approve, the banner on the public page, and Avo checking that page before it
+        reports back.
       </p>
-      <p>Animated from the production screens of 5 October 2026. The owner's first name is changed.</p>
     </div>
   </section>
 
