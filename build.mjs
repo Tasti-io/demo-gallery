@@ -13,7 +13,7 @@ const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&
 
 const card = (d) => `
       <a class="card" href="${esc(d.url)}" target="_blank" rel="noopener">
-        <div class="shot"><img src="${esc(d.shot)}" alt="" loading="lazy" width="1200" height="800"></div>
+        <div class="shot"><img src="${esc(d.shot)}" alt="" loading="lazy" width="1200" height="675"></div>
         <div class="body">
           <div class="head">
             <h2>${esc(d.title)}</h2>
@@ -56,7 +56,7 @@ const html = `<!DOCTYPE html>
         text-decoration:none;color:inherit;transition:transform .14s ease,box-shadow .14s ease,border-color .14s ease}
   .card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(27,26,24,.10);border-color:#D4CFC4}
   .card:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
-  .shot{aspect-ratio:3/2;overflow:hidden;background:var(--canvas);border-bottom:1px solid var(--rule)}
+  .shot{aspect-ratio:16/9;overflow:hidden;background:var(--canvas);border-bottom:1px solid var(--rule)}
   .shot img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
   .body{padding:17px 19px 19px}
   .head{display:flex;align-items:baseline;gap:9px;margin-bottom:7px}
