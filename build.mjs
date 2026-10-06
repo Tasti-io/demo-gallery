@@ -72,9 +72,14 @@ const html = `<!DOCTYPE html>
                 font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--faint);
                 white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .shot{aspect-ratio:16/9;overflow:hidden;background:var(--paper)}
+  /* The pages were captured at 1920 and hold their content in a centre column,
+     so a straight fit leaves the card mostly margin and the text unreadable at
+     card size. Zooming into the top centre crops the empty gutters and shows the
+     thing itself, which is the only reason the picture is there. */
   .shot img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;
+            transform:scale(1.42);transform-origin:top center;
             transition:transform .5s cubic-bezier(.2,.7,.3,1)}
-  .card:hover .shot img{transform:scale(1.025)}
+  .card:hover .shot img{transform:scale(1.47)}
   .body{padding:17px 19px 19px}
   .head{display:flex;align-items:baseline;gap:9px;margin-bottom:7px}
   .head h2{font-family:'DM Serif Display',Georgia,serif;font-size:21px;font-weight:400}
