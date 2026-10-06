@@ -34,5 +34,17 @@
     "time": "about 10 minutes per invoice, done properly",
     "point": "Two cases at the same price can hide a 20% difference per kilogram, and only the division shows it",
     "live": true
+  },
+  {
+    "slug": "delivery",
+    "title": "Where the delivery money went",
+    "url": "https://delivery.tasti.io",
+    "host": "delivery.tasti.io",
+    "shot": "/shots/delivery.jpg",
+    "blurb": "DoorDash, Uber Eats and SkipTheDishes payout statements checked against the POS and the bank, order by order. Commission kept on refunded orders, payouts that never landed, deposits that came in short.",
+    "replaces": "Ticking app payouts against the bank only when the month looks off",
+    "time": "about 2 hours a month for a two-site group, if anyone does it",
+    "point": "At $40,000 a month through the apps, a one percent gap between statement and bank is $400 a month",
+    "live": true
   }
 ]
