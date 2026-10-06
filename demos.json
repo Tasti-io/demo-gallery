@@ -22,5 +22,17 @@
     "time": "about 20 minutes per announcement",
     "point": "Every channel is verified against the live page, so the one that silently did not publish is caught the same morning",
     "live": true
+  },
+  {
+    "slug": "invoices",
+    "title": "The invoice reader",
+    "url": "https://invoices.tasti.io",
+    "host": "invoices.tasti.io",
+    "shot": "/shots/invoices.jpg",
+    "blurb": "Drop in one supplier invoice, PDF or photo. Your own lines come back with a price per kilogram beside each, and anything it cannot price honestly is set aside with the reason. Nothing is kept.",
+    "replaces": "A calculator, the invoice, and guessing what is inside a 4/5 LB case",
+    "time": "about 10 minutes per invoice, done properly",
+    "point": "Two cases at the same price can hide a 20% difference per kilogram, and only the division shows it",
+    "live": true
   }
 ]
