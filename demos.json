@@ -58,5 +58,17 @@
     "time": "about 2 hours per price round, plus the drift nobody sees",
     "point": "Three weeks of app prices lagging a 4% increase, on $40,000 a month through the apps, is about $1,200",
     "live": true
+  },
+  {
+    "slug": "tips",
+    "title": "Tips, ready for payroll",
+    "url": "https://tips.tasti.io",
+    "host": "tips.tasti.io",
+    "shot": "/shots/tips.jpg",
+    "blurb": "A week of tips across four rooms. The missed clock-out and the owner behind the bar are decided by a person, not guessed by a formula. Split to the cent by written rules, signed off per room, and every member of staff gets their own working on their phone.",
+    "replaces": "A manager, a spreadsheet and two hours per room every pay period",
+    "time": "about 2 hours per room per pay period",
+    "point": "At 4 rooms, 2 hours each, 26 pay periods and $35 an hour, that is about $7,300 a year of manager time, before the disputes",
+    "live": true
   }
 ]
