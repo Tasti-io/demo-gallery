@@ -15,7 +15,7 @@ const card = (d) => `
       <a class="card" href="${esc(d.url)}" target="_blank" rel="noopener">
         <div class="frame">
           <div class="chrome"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="addr">${esc(d.host)}</span></div>
-          <div class="shot"><img src="${esc(d.shot)}" alt="" loading="lazy" width="1600" height="1000"></div>
+          <div class="shot"><img src="${esc(d.shot)}" alt="" loading="lazy" width="1600" height="900"></div>
         </div>
         <div class="body">
           <div class="head">
@@ -71,7 +71,7 @@ const html = `<!DOCTYPE html>
   .chrome .addr{flex:1;margin-left:6px;background:#F6F4EF;border-radius:5px;padding:3px 9px;
                 font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--faint);
                 white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .shot{aspect-ratio:16/10;overflow:hidden;background:var(--paper)}
+  .shot{aspect-ratio:16/9;overflow:hidden;background:var(--paper)}
   .shot img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;
             transition:transform .5s cubic-bezier(.2,.7,.3,1)}
   .card:hover .shot img{transform:scale(1.025)}
