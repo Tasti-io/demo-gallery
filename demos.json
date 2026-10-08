@@ -2,13 +2,13 @@
   {
     "slug": "morning-sheet",
     "title": "The morning sheet",
-    "url": "https://morning-sheet.tasti.io",
+    "url": "https://morning-sheet.tasti.io/#tomorrow",
     "host": "morning-sheet.tasti.io",
-    "shot": "/shots/morning-sheet.jpg",
-    "blurb": "Every location on one page before opening, built from the point of sale and from the supplier invoices it cannot see.",
-    "replaces": "Opening three portals and rebuilding yesterday by hand",
-    "time": "about 30 minutes a day",
-    "point": "A 2% price drift nobody caught, on $70k of monthly purchasing, is roughly $1,400 a month",
+    "shot": "/shots/morning-sheet-tomorrow.jpg",
+    "blurb": "Every location on one page before opening, from the point of sale and the invoices it cannot see. Then tomorrow's rota, proposed from a half-hour forecast under BC's employment rules.",
+    "replaces": "Rebuilding yesterday by hand, and copying last week's rota forward",
+    "time": "about 30 minutes a day, plus the weekly rota",
+    "point": "A Friday rota copied forward puts six servers on at 14:00, hours before the dinner rush",
     "live": true
   },
   {
