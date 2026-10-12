@@ -104,6 +104,11 @@ const html = `<!DOCTYPE html>
   .prod h2{font-family:'DM Serif Display',Georgia,serif;font-size:24px;font-weight:400;margin-bottom:7px}
   .prod p{font-size:14.5px;line-height:22px;color:var(--mid);max-width:78ch}
   .prod p + p{margin-top:8px;font-size:13px;line-height:20px;color:var(--faint)}
+  .ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+  .btn{display:inline-block;padding:11px 18px;border-radius:8px;font-size:14.5px;font-weight:600;text-decoration:none}
+  .btn.primary{background:var(--teal);color:#fff}
+  .btn.ghost{border:1px solid var(--rule);color:var(--ink);background:#fff}
+  .btn:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
   .section{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;
            color:var(--faint);margin-top:34px}
   .section + .grid{margin-top:12px}
@@ -124,6 +129,24 @@ const html = `<!DOCTYPE html>
     properly, end to end. Open any of them and use it. Nothing asks you to sign in.
   </p>
 
+
+  <section class="prod" id="desk">
+    <video src="https://desk.tasti.io/videos/landing.mp4" poster="https://desk.tasti.io/videos/landing.jpg" controls playsinline preload="metadata" width="1920" height="1080"></video>
+    <div class="body">
+      <div class="tag">Tasti Desk &middot; ready today &middot; 1 to 5 locations</div>
+      <h2>Your back office, finally clear</h2>
+      <p>
+        Sales from Square, supplier bills read line by line, the schedule, menu costs and stock in one place,
+        with Avo pointing at what needs you this morning. Watch the minute above, then click around a demo
+        café that runs on six months of made-up data. No sign-up.
+      </p>
+      <div class="ctas">
+        <a class="btn primary" href="https://desk.tasti.io/demo">Open the demo café</a>
+        <a class="btn ghost" href="https://desk.tasti.io">Start free for 30 days</a>
+      </div>
+      <p>$149 CAD per location a month after the trial, no card to start. Your data is stored in Canada.</p>
+    </div>
+  </section>
 
   <section class="prod">
     <video src="/media/avo-timothys.mp4" poster="/media/avo-timothys-poster.jpg" autoplay muted loop playsinline controls preload="metadata" width="1920" height="1080"></video>
